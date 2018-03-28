@@ -1,3 +1,4 @@
+import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
@@ -19,7 +20,6 @@ public class Test {
 
         IntStream.rangeClosed(5+1,10).boxed().collect(Collectors.toList()).forEach(System.out::println);
         Stream.concat(Stream.of("a","b","c"),Stream.of("d","e","f")).collect(Collectors.toList()).forEach(System.out::println);
-
     }
 
 
